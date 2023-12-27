@@ -9,7 +9,7 @@ const Header = () => {
     
       <ul className='header-menu'>
         <li>Home</li>
-        <li>Programs</li>
+        <li>Classes</li>
         <li>Why us</li>
         <li>Plans</li>
         <li>Testimonials</li>
