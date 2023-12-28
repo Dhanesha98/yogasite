@@ -1,16 +1,16 @@
 /* make variables */
 :root {
-  --lightgray: #ffffff;
+  --lightgray: #d48080;
   --gray: #827e7edd;
   --orange: #85c4b5fd;
   --darkGrey: #615d5d;
   --caloryCard: #95a4a1fa;
-  --planCard: linear-gradient(210.41deg, #f24848 1.14%, #ffa739 100.75%);
-  --appColor:  rgba(223, 240, 240, 0);
+  --planCard: linear-gradient(210.41deg, #48f2ef 1.14%, #39ffef 100.75%);
+  --appColor:  #708e8e;
 }
 
 .App {
-  background-color: var(--appColor);
+  background-color: rgb(230, 230, 230);
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -41,4 +41,12 @@
 .btn:hover{
   cursor: pointer;
 
+}
+
+.blur{
+  background-color: rgba(93, 167, 155, 0.69);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: 1;
 }

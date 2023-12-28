@@ -139,15 +139,18 @@
    top: 10rem;
    right: 8rem;
    width: 23rem; 
+  
 }
 
-.hero-image-back{
-   position: absolute;
-   top: 4rem; 
-   right: 20rem;
-   z-index: -1;
-   width: 15rem;
-}
+.hero-image-back {
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: 0; /* Set a lower z-index to position it behind other elements */
+    height: 28rem;
+    width: 15rem;
+  }
+  
 
 .calories{
     display: flex;
@@ -180,4 +183,10 @@
     color: white;
     font-size: 1.5rem;
 
+}
+
+.hero-blur{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
 }
