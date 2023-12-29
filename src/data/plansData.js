@@ -11,11 +11,11 @@ export const plansData = [
       </svg>
     ),
     name: "BASIC PLAN",
-    price: "25",
+    price: "$ 25",
     features: [
-      "2 hours of excercises",
-      "Free consultaion to coaches",
-      "Access to The Community",
+      "2 hours of yoga",
+      "500+ yoga and movement",
+      "released by new teachers",
     ],
   },
   {
@@ -30,11 +30,11 @@ export const plansData = [
       </svg>
     ),
     name: "PREMIUM PLAN",
-    price: "30",
+    price: "$ 30",
     features: [
-      "5 hour of excercises",
-      "Free consultaion of Coaches",
-      "Accessto minibar",
+      "5 hour of yoga",
+      "1000s of AD-FREE yoga",
+      "25% off livestream events",
     ],
   },
   {
@@ -49,11 +49,11 @@ export const plansData = [
       </svg>
     ),
     name: "PRO PLAN",
-    price: "45",
+    price: "$ 45",
     features: [
-      "8 hours of excercises",
-      "Consultation of Private Coach",
-      "Free Fitness Merchandises",
+      "8 hours of yoga",
+      "Access to our Mobile app",
+      "Free Yoga vinyasa",
     ],
   },
 ];

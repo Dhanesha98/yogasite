@@ -1,16 +1,16 @@
 /* make variables */
 :root {
-  --lightgray: #d48080;
-  --gray: #827e7edd;
-  --orange: #85c4b5fd;
-  --darkGrey: #615d5d;
-  --caloryCard: #95a4a1fa;
-  --planCard: linear-gradient(210.41deg, #48f2ef 1.14%, #39ffef 100.75%);
-  --appColor:  #708e8e;
+  --lightgray: #a6bdb9;
+  --gray: #a3b3b3dd;
+  --green: rgba(133, 196, 181, 0.992);
+  --darkGrey: #505654;
+  --caloryCard: #7a8482fa;
+  --planCard: linear-gradient(210.41deg, #32c1b0 1.14%, #e1eae9 100.75%);
+  --appColor:  #75b5a5;
 }
 
 .App {
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(248, 253, 251);
   display: flex;
   flex-direction: column;
   gap: 6rem;

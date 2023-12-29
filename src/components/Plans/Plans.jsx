@@ -1,12 +1,12 @@
 import React from 'react';
 import "./Plans.css";
 import {plansData} from '../../data/plansData';
-import whiteTick from '../../assets/tick.png';
+import whiteTick from '../../assets/whiteTick.png';
 import arrow from '../../assets/rightArrow.png';
 
 const Plans = () => {
   return (
-    <div className='plans-container'>
+    <div className='plans-container' id='plans'>
       <div className="blur plans-blur-1"></div>
       <div className="blur plans-blur-2"></div>
       <div className="programs-header" style={{gap:'2rem'}}>
@@ -26,13 +26,13 @@ const Plans = () => {
                <div className="features">
                 {plan.features.map((feature, i)=>(
                   <div className="feature">
-                    <img src={whiteTick} alt="" />
+                    <img src={whiteTick} alt=""/>
                     <span key={i}>{feature}</span>
                   </div>
                  ) )}
                </div>
                <div><span>See More benefits 
-                    <img src={arrow} alt="" />
+                    <img src={arrow} alt="" style={{width:'0.9rem'}}/>
                 </span></div>
                <button className='btn'>Join Now</button>
             </div>

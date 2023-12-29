@@ -38,12 +38,12 @@
 }
 
 .plan:nth-child(2){
-   background-color: var(--orange);
+   background-color: var(--green);
    transform: scale(1.1);   
 }
 
 .plan>svg{
-    fill: var(--orange);
+    fill: var(--green);
     width: 2rem;
     height: 2rem;
 }
@@ -72,12 +72,21 @@
     gap: 1rem;
 }
 .feature>img{
-    width: 1rem;
+    width: 0.8rem;
 }
 
 .plans>:nth-child(2)>svg{
     fill: white;
 }
 .plans>:nth-child(2)>button{
-    color: var(--orange);
+    color: var(--green);
+}
+
+@media screen and (max-width:768px){
+   .plans{
+    flex-direction: column;
+   } 
+   .plans>:nth-child(2){
+    transform: none;
+   }
 }

@@ -2,26 +2,29 @@ import React from 'react';
 import './Hero.css';
 import Header from '../Header/Header';
 import hero_image from "../../assets/hero-image.png";
-import hero_image_back from "../../assets/hero_image_back.png";
+import hero_image_back from "../../assets/hero-image-back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
 import {motion} from 'framer-motion';
+import NumberCounter from 'number-counter';
+
 
 const Hero = () => {
   const transition = {type:'spring', duration:3}
+  const mobile = window.innerWidth<=768 ? true: false;
   return (
-    <div className='hero'>
+    <div className='hero' id='home'>
       <div className="blur hero-blur"></div>
       <div className='left-h'>
         <Header/>
 {/* the best ad */}
         <div className='the-best-ad'>
             <motion.div
-            initial={{left:'238px'}}
+            initial={{left: mobile? "165px":"238px"}}
             whileInView={{left:'8px'}}
             transition={{...transition, type:'tween'}}
             ></motion.div>
-            <span>the best yoga studio in the town</span>
+            <span>learn from the world's greatest yoga minds</span>
         </div>
 
 {/* Hero heading */}
@@ -43,16 +46,16 @@ const Hero = () => {
         {/* figures */}
         <div className="figures">
             <div>
-              <span>+140</span>
-              <span>expert coaches</span>
+              <span><NumberCounter end={20} start={1} delay='4' preFix="+"/></span>
+              <span>expert trainers</span>
             </div>
             <div>
-              <span>+978</span>
+              <span><NumberCounter end={550} start={500} delay='4' preFix="+"/></span>
               <span>members joined</span>
             </div>
             <div>
-              <span>+50</span>
-              <span>fitness programs</span>
+              <span><NumberCounter end={24} start={1} delay='4' preFix="+"/></span>
+              <span>yoga classes</span>
             </div>
         </div>
 
